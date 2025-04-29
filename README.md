@@ -43,9 +43,9 @@ Configuration
 
 The folder `/etc/media-automount.d` can be used to set custom mount options for specific device types.
 
-If a file with filename matching a filesystem type (eg. `vfat`, `nfts`, `etc`) is found, it'll be loaded when a device using the given filesystem is to be mounted. This can be used to change the parameters provided to `mount`.
+If a filename matching a filesystem type (for example, `ntfs`, `vfat`, etc.) that is also suffixed with `.type` is found, it'll be loaded when a device using the given filesystem is to be mounted. This can be used to change the parameters provided to `mount`.
 
-An example below for `/etc/media-automount.d/ntfs`:
+An example below for `/etc/media-automount.d/ntfs.type`:
 
 ```
 # Mount options to use for auto-mounting NTFS drives
